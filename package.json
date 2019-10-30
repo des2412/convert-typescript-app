@@ -1,0 +1,50 @@
+{
+  "name": "convert-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/react-bootstrap": "^0.32.20",
+    "@types/react-dom": "^16.9.3",
+    "@types/reactstrap": "^8.0.6",
+    "axios": "^0.19.0",
+    "babel-preset-react-app": "^9.0.2",
+    "bootstrap": "^4.3.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-border-wrapper": "^1.0.3",
+    "react-dom": "^16.11.0",
+    "react-flag-icon-css": "^1.0.25",
+    "react-scripts": "3.2.0",
+    "reactstrap": "^8.1.1",
+    "types": "^0.1.1",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^4.2.0",
+    "style-loader": "^1.0.0"
+  }
+}
