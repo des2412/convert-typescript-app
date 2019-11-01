@@ -1,6 +1,6 @@
 import axios from 'axios';
 import BorderWrapper from 'react-border-wrapper'
-import { Form, FormGroup, InputGroup, Input, Label, Button, Container, Col } from 'reactstrap';
+import { Form, FormGroup, Input, Label, Button, Container, Col } from 'reactstrap';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import './App.css';
 import { properties } from './properties.js';
@@ -16,9 +16,7 @@ export default class App extends React.Component {
   async handleSubmit(event) {
     event.preventDefault();
     const selectedLang = this.state.dropdownvalue;
-    console.log("submit language:" + selectedLang)
     const numberInput = event.target.number.value;
-    console.log("submit number:" + numberInput)
     const object = {};
     object['number'] = numberInput;
     object['lang'] = selectedLang;
@@ -76,8 +74,9 @@ export default class App extends React.Component {
       <Container className="App">
         <Form onSubmit={(e) => this.handleSubmit(e)}>
           <BorderWrapper borderWidth='1px' borderType='dotted'>
-
-            <h2 className={'title'}>Conversion Parameters</h2>
+            <Col sm={{ size: 'auto', offset: 3 }}> <p><strong>Invokes AWS API Gateway facade to Lambda Function</strong></p>
+            </Col>
+            <Col sm={{ size: 'auto', offset: 1 }}><strong>Conversion Parameters</strong></Col>
             <Col sm={{ size: 'auto', offset: 4 }}>
               <FormGroup row>
                 <Label for="number">Number</Label>
