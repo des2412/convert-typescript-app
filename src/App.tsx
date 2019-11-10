@@ -53,7 +53,7 @@ export default class App extends React.Component {
   handleChange = (event) => {
     console.log('selected language:' + event.target.innerText)
     this.setState({ dropdownvalue: event.target.innerText, dropDownOpen: false }, () =>
-      console.log('selectedLang-Updated:' + this.state.dropdownvalue)
+      console.log('Updated language:' + this.state.dropdownvalue)
     );
   }
 
@@ -98,9 +98,9 @@ export default class App extends React.Component {
                   <DropdownMenu>
                     <DropdownItem onClick={this.toggle} dropDownValue="Select">Select</DropdownItem>
                     <DropdownItem onClick={this.handleChange}>NL</DropdownItem>
-                    <DropdownItem onClick={this.handleChange} dropDownValue="DE">DE</DropdownItem>
-                    <DropdownItem onClick={this.handleChange} dropDownValue="UK">UK</DropdownItem>
-                    <DropdownItem onClick={this.handleChange} dropDownValue="FR">FR</DropdownItem>
+                    <DropdownItem onClick={this.handleChange}>DE</DropdownItem>
+                    <DropdownItem onClick={this.handleChange}>UK</DropdownItem>
+                    <DropdownItem onClick={this.handleChange}>FR</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
               </FormGroup>
