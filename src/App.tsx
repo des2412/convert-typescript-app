@@ -73,7 +73,7 @@ export default class App extends React.Component {
       <Container className="App">
         <Form onSubmit={(e) => this.handleSubmit(e)}>
           <BorderWrapper borderWidth='1px' borderType='dotted'>
-            <Col sm={{ size: 'auto', offset: 3 }}> <p><strong>Invokes AWS API Gateway facade to Lambda Function</strong></p>
+            <Col sm={{ size: 'auto', offset: 3 }}> <p><strong>Invokes AWS Lambda Function</strong></p>
             </Col>
             <Col sm={{ size: 'auto', offset: 1 }}><strong>Conversion Parameters</strong></Col>
             <Col sm={{ size: 'auto', offset: 4 }}>
