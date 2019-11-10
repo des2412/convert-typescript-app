@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project is managed by AWS amplify
+
+Open [https://master.d18teuogf78dgr.amplifyapp.com/](https://master.d18teuogf78dgr.amplifyapp.com/) to use it in the browser.
+
 ## Available Scripts
 
 In the project directory, you can run:

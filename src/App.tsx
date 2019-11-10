@@ -64,7 +64,6 @@ export default class App extends React.Component {
       dropDownOpen: !this.state.dropDownOpen
     });
   }
-
   render = () => {
     const minm = properties.minm
     const maxm = properties.maxm
